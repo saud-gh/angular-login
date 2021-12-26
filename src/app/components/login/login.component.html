@@ -1,0 +1,24 @@
+<div class="form-container">
+  <form [formGroup]="form" class="form">
+    <mat-form-field class="form-field" appearance="fill">
+      <!-- <mat-label>Username</mat-label> -->
+      <input
+        matInput
+        formControlName="username"
+        name="no-name"
+        placeholder="Username"
+      />
+    </mat-form-field>
+    <mat-form-field class="form-field" appearance="fill">
+      <!-- <mat-label>Username</mat-label> -->
+      <input
+        matInput
+        type="password"
+        formControlName="password"
+        name="no-name"
+        placeholder="Password"
+      />
+    </mat-form-field>
+    <button mat-stroked-button (click)="onSubmit()">Login</button>
+  </form>
+</div>
